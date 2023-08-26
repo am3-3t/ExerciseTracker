@@ -4,10 +4,7 @@ import os
 
 today = dt.datetime.now()
 today_date = today.date()
-now = today.now()
-time = now.time().strftime('%H:%M')
-
-print(time)
+time = today.time().strftime('%H:%M')
 
 app_id = os.environ.get('APP_ID')
 app_id_2 = os.environ.get('APP_ID_2')
